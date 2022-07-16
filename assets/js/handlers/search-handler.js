@@ -1,3 +1,8 @@
+const addListeners = () => {
+    let search = document.getElementById('searchField');
+    search.addEventListener('keydown', (event) => keypressHandler(event.key));
+}
+
 const searchDrink = () =>{
     let query = document.getElementById("searchField").value;
 
@@ -64,4 +69,10 @@ const createItem = (drink,index) =>{
     newItem.innerText = drink.strDrink;
 
     container.appendChild(newItem);
+}
+
+const keypressHandler = (key) => {
+    if(key === 'Enter'){
+        searchDrink();
+    }
 }

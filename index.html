@@ -72,12 +72,12 @@
 
   <body>
     <!-- Content -->
-    <div class="content-wrapper">
+    <div class="content-wrapper mt-4">
         <div class="container-xxl flex-grow-1 container-p-y">
-            <div class="row">
+            <div class="row justify-content-center">
                 <!-- left side -->
                 <div class="col-md-6">
-                    <div class="card mb-4">
+                    <div class="card mb-3-4">
                       <h5 class="card-header">Search for a cocktail</h5>
                       <div class="card-body">
                         <div>
@@ -100,19 +100,21 @@
                         </div>
                       </div>
                     </div>
-                    <div id="error-msg" class="alert alert-danger zindex-4 d-none" role="alert"></div>
-                    <div class="demo-inline-spacing mt-3">
-                      <div class="list-group" id="result-container">
+                    <div class="card mb-4">
+                      <div class="demo-inline-spacing m-3">
+                        <div class="list-group" id="result-container">
+                        </div>
                       </div>
                     </div>
+                    <div id="error-msg" class="alert alert-danger zindex-4 d-none" role="alert"></div>
                 </div>
                 <!-- right side -->
                 <div class="col-md-6 col-lg-4">
                   <div class="card mb-4">
-                    <img id="drink-image" class="card-img-top" src="https://www.thecocktaildb.com/images/media/drink/kpsajh1504368362.jpg" alt="Cocktail Image" />
+                    <img id="drink-image" class="card-img-top"/>
                     <div class="card-body">
                       <h2 class="card-text" id="drink-name">
-                        Cosmopolitan
+                        Your Drink
                       </h2>
                       <h6 class="text-light fw-semibold mt-5">Ingredients</h6>
                       <div class="col-lg-12 mb-3">
@@ -120,26 +122,14 @@
                           <div class="list-group" id="ingredient-container">
                             <label class="list-group-item">
                               <input class="form-check-input me-1" type="checkbox" value="">
-                              Absolut Citron
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Lime juice
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Cointreau
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Cranberry juice
+                              Ingredient
                             </label>
                           </div>
                         </div>
                       </div>
                       <h6 class="text-light fw-semibold mt-5">Instructions</h6>
                       <p class="card-text" id="drink-instructions">
-                        Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel.
+                        This is the best way to recreate that cocktail.
                       </p>
                     </div>
                   </div>
@@ -166,6 +156,7 @@
     <script src="assets/js/main.js"></script>
 
     <!-- Page JS -->
+    <script>addListeners()</script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

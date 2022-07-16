@@ -7,7 +7,7 @@ setInterval(()=>{
 
 const changePlaceholder = (queryField) => {
     placeholderIndex++
-    placeholders = ['Tequila','Cosmopolitan','Margarita','Mai Tai'];
+    placeholders = ['Tequila','Cosmopolitan','Margarita','Mai Tai','Martini','Mojito'];
 
     if(placeholderIndex >= placeholders.length){
         placeholderIndex = 0;
