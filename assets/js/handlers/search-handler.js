@@ -53,7 +53,7 @@ const createItem = (drink,index) =>{
         if(!drink['strIngredient'+i]){
             break;
         }
-        let ingredient = drink['strMeasure'+i] ? drink['strMeasure'+i]+drink['strIngredient'+i] : drink['strIngredient'+i]
+        let ingredient = drink['strMeasure'+i] ? drink['strMeasure'+i]+' '+drink['strIngredient'+i] : drink['strIngredient'+i]
         ingredients.push(ingredient);
     }
 
