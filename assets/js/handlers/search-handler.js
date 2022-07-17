@@ -53,7 +53,8 @@ const createItem = (drink,index) =>{
         if(!drink['strIngredient'+i]){
             break;
         }
-        ingredients.push(drink['strIngredient'+i]);
+        let ingredient = drink['strMeasure'+i] ? drink['strMeasure'+i]+drink['strIngredient'+i] : drink['strIngredient'+i]
+        ingredients.push(ingredient);
     }
 
     newItem.className = "list-group-item list-group-item-action";
